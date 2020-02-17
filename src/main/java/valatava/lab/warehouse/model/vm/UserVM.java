@@ -3,6 +3,11 @@ package valatava.lab.warehouse.model.vm;
 import javax.validation.constraints.Size;
 import valatava.lab.warehouse.model.dto.UserDTO;
 
+/**
+ * View Model extending the UserDTO, which is meant to be used in the user management UI.
+ *
+ * @author Yuriy Govorushkin
+ */
 public class UserVM extends UserDTO {
 
     public static final int PASSWORD_MIN_LENGTH = 4;

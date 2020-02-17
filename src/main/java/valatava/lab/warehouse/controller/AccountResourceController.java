@@ -14,27 +14,29 @@ import valatava.lab.warehouse.exeption.AccountResourceException;
 import valatava.lab.warehouse.exeption.InvalidPasswordException;
 import valatava.lab.warehouse.model.User;
 import valatava.lab.warehouse.model.vm.UserVM;
-import valatava.lab.warehouse.repository.UserRepository;
 import valatava.lab.warehouse.service.MailService;
 import valatava.lab.warehouse.service.UserService;
 
+/**
+ * REST controller for managing the current user's account.
+ *
+ * @author Yuriy Govorushkin
+ */
 @RestController
 @RequestMapping("/api")
 public class AccountResourceController {
 
-    private final UserRepository userRepository;
     private final UserService userService;
     private final MailService mailService;
 
-    public AccountResourceController(UserRepository userRepository, UserService userService, MailService mailService) {
-        this.userRepository = userRepository;
+    public AccountResourceController(UserService userService, MailService mailService) {
         this.userService = userService;
         this.mailService = mailService;
     }
 
     @PostMapping("/register")
     @ResponseStatus(HttpStatus.CREATED)
-    public void registeAccount(@RequestBody UserVM userVM) {
+    public void registerAccount(@RequestBody UserVM userVM) {
         if (!checkPasswordLength(userVM.getPassword())) {
             throw new InvalidPasswordException();
         }

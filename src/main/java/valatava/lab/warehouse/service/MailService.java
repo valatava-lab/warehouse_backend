@@ -15,6 +15,11 @@ import org.thymeleaf.context.Context;
 import org.thymeleaf.spring5.SpringTemplateEngine;
 import valatava.lab.warehouse.model.User;
 
+/**
+ * Service for sending emails.
+ *
+ * @author Yuriy Govorushkin
+ */
 @Service
 public class MailService {
 

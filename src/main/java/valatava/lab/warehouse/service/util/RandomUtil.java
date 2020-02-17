@@ -3,6 +3,11 @@ package valatava.lab.warehouse.service.util;
 import java.security.SecureRandom;
 import org.apache.commons.lang3.RandomStringUtils;
 
+/**
+ * Utility class for generating random Strings.
+ *
+ * @author Yuriy Govorushkin
+ */
 public class RandomUtil {
 
     private static final int DEF_COUNT = 20;

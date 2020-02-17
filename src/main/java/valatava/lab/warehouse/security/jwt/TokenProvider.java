@@ -18,6 +18,11 @@ import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.stereotype.Component;
 
+/**
+ * A provider JWT token for Spring Security.
+ *
+ * @author Yuriy Govorushkin
+ */
 @Component
 public class TokenProvider implements InitializingBean {
 

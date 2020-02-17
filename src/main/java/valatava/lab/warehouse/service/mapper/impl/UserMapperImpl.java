@@ -11,6 +11,11 @@ import valatava.lab.warehouse.model.User;
 import valatava.lab.warehouse.model.dto.UserDTO;
 import valatava.lab.warehouse.service.mapper.UserMapper;
 
+/**
+ * Mapper for the entity {@link User} and its DTO called {@link UserDTO}.
+ *
+ * @author Yuriy Govorushkin
+ */
 @Service
 public class UserMapperImpl implements UserMapper {
 
@@ -52,7 +57,6 @@ public class UserMapperImpl implements UserMapper {
             return user;
         }
     }
-
 
     private Set<Authority> authoritiesFromStrings(Set<String> authoritiesAsString) {
         Set<Authority> authorities = new HashSet<>();

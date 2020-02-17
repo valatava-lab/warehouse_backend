@@ -17,6 +17,11 @@ import lombok.Data;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
+/**
+ * A user.
+ *
+ * @author Yuriy Govorushkin
+ */
 @Entity
 @Table(name = "warehouse_user")
 @Data
