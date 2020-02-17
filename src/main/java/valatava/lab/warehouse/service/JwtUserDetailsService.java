@@ -14,6 +14,11 @@ import valatava.lab.warehouse.exeption.UserNotActivatedException;
 import valatava.lab.warehouse.model.User;
 import valatava.lab.warehouse.repository.UserRepository;
 
+/**
+ * Authenticate a user from the database.
+ *
+ * @author Yuriy Govorushkin
+ */
 @Service
 public class JwtUserDetailsService implements UserDetailsService {
 

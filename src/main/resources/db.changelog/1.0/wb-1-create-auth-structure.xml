@@ -5,7 +5,7 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
          http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
 
-    <changeSet id="001" author="YuryGovorushkin">
+    <changeSet id="2020-02-15-18-20-00" author="YuryGovorushkin">
 
         <createTable tableName="warehouse_user">
             <column name="id" type="bigint" autoIncrement="true">
@@ -18,7 +18,7 @@
                 <constraints nullable="false"/>
             </column>
             <column name="email" type="varchar(250)">
-                <constraints unique="true"/>
+                <constraints unique="true" nullable="false"/>
             </column>
             <column name="first_name" type="varchar(100)"/>
             <column name="last_name" type="varchar(100)"/>

@@ -16,6 +16,11 @@ import valatava.lab.warehouse.model.vm.LoginVM;
 import valatava.lab.warehouse.security.jwt.JWTFilter;
 import valatava.lab.warehouse.security.jwt.TokenProvider;
 
+/**
+ * Controller to authenticate users.
+ *
+ * @author Yuriy Govorushkin
+ */
 @RestController
 @RequestMapping("/api")
 public class UserJWTController {

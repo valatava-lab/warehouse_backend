@@ -13,6 +13,11 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import valatava.lab.warehouse.security.jwt.JWTConfigurer;
 import valatava.lab.warehouse.security.jwt.TokenProvider;
 
+/**
+ * Configuration for Spring Security authorities.
+ *
+ * @author Yuriy Govorushkin
+ */
 @EnableWebSecurity
 @Configuration
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {

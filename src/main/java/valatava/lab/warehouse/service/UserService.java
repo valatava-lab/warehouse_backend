@@ -19,6 +19,11 @@ import valatava.lab.warehouse.repository.UserRepository;
 import valatava.lab.warehouse.security.AuthoritiesConstants;
 import valatava.lab.warehouse.service.util.RandomUtil;
 
+/**
+ * Service class for managing users.
+ *
+ * @author Yuriy Govorushkin
+ */
 @Service
 @Transactional
 public class UserService {

@@ -4,6 +4,9 @@ import java.util.List;
 import valatava.lab.warehouse.model.User;
 import valatava.lab.warehouse.model.dto.UserDTO;
 
+/**
+ * @author Yuriy Govorushkin
+ */
 public interface UserMapper {
 
     List<UserDTO> toUserDTOs(List<User> users);

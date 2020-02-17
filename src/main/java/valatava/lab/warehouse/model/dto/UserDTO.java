@@ -5,6 +5,11 @@ import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import lombok.Data;
 
+/**
+ * A DTO representing a user, with his authorities.
+ *
+ * @author Yuriy Govorushkin
+ */
 @Data
 public class UserDTO {
 
