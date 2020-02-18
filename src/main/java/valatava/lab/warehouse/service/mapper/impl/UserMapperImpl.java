@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 import org.springframework.stereotype.Service;
 import valatava.lab.warehouse.model.Authority;
 import valatava.lab.warehouse.model.User;
-import valatava.lab.warehouse.model.dto.UserDTO;
+import valatava.lab.warehouse.service.dto.UserDTO;
 import valatava.lab.warehouse.service.mapper.UserMapper;
 
 /**
