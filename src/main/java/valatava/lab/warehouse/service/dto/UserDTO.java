@@ -1,4 +1,4 @@
-package valatava.lab.warehouse.model.dto;
+package valatava.lab.warehouse.service.dto;
 
 import java.util.Set;
 import javax.validation.constraints.Email;

@@ -1,4 +1,4 @@
-package valatava.lab.warehouse.model.vm;
+package valatava.lab.warehouse.service.vm;
 
 import javax.validation.constraints.NotNull;
 import lombok.Data;
