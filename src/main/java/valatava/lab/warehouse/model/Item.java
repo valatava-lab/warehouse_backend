@@ -1,33 +1,29 @@
 package valatava.lab.warehouse.model;
 
-import java.time.LocalDate;
+import java.util.List;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import lombok.Data;
 
 /**
- * A price.
+ * A item.
  *
  * @author Yuriy Govorushkin
  */
 @Entity
 @Data
-public class Price {
+public class Item {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "model_id")
-    private Model model;
+    private String nameItem;
 
-    private Long value;
-    private LocalDate startAt;
-    private LocalDate stopAt;
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "item")
+    private List<Store> stores;
 }
