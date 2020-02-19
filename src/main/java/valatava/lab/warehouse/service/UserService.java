@@ -13,10 +13,10 @@ import valatava.lab.warehouse.exeption.EmailAlreadyUsedException;
 import valatava.lab.warehouse.exeption.UsernameAlreadyUsedException;
 import valatava.lab.warehouse.model.Authority;
 import valatava.lab.warehouse.model.User;
-import valatava.lab.warehouse.model.dto.UserDTO;
 import valatava.lab.warehouse.repository.AuthorityRepository;
 import valatava.lab.warehouse.repository.UserRepository;
 import valatava.lab.warehouse.security.AuthoritiesConstants;
+import valatava.lab.warehouse.service.dto.UserDTO;
 import valatava.lab.warehouse.service.util.RandomUtil;
 
 /**

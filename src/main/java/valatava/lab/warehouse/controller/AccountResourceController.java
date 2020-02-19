@@ -13,9 +13,9 @@ import org.springframework.web.bind.annotation.RestController;
 import valatava.lab.warehouse.exeption.AccountResourceException;
 import valatava.lab.warehouse.exeption.InvalidPasswordException;
 import valatava.lab.warehouse.model.User;
-import valatava.lab.warehouse.model.vm.UserVM;
 import valatava.lab.warehouse.service.MailService;
 import valatava.lab.warehouse.service.UserService;
+import valatava.lab.warehouse.service.vm.UserVM;
 
 /**
  * REST controller for managing the current user's account.

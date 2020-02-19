@@ -1,7 +1,7 @@
-package valatava.lab.warehouse.model.vm;
+package valatava.lab.warehouse.service.vm;
 
 import javax.validation.constraints.Size;
-import valatava.lab.warehouse.model.dto.UserDTO;
+import valatava.lab.warehouse.service.dto.UserDTO;
 
 /**
  * View Model extending the UserDTO, which is meant to be used in the user management UI.

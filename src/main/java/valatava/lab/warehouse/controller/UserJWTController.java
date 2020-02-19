@@ -12,9 +12,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import valatava.lab.warehouse.model.vm.LoginVM;
 import valatava.lab.warehouse.security.jwt.JWTFilter;
 import valatava.lab.warehouse.security.jwt.TokenProvider;
+import valatava.lab.warehouse.service.vm.LoginVM;
 
 /**
  * Controller to authenticate users.
