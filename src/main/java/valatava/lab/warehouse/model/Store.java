@@ -37,8 +37,8 @@ public class Store {
 
     private String code;
     private String description;
-    private Date yearFrom;
-    private Date yearTo;
+    private Long yearFrom;
+    private Long yearTo;
     private boolean bridge;
     private Long amount;
     private Long price;
