@@ -1,0 +1,41 @@
+package valatava.lab.warehouse.service;
+
+import java.util.List;
+import liquibase.exception.DatabaseException;
+import org.springframework.stereotype.Service;
+import valatava.lab.warehouse.model.Car;
+import valatava.lab.warehouse.repository.CarRepository;
+
+/**
+ * Service class for managing cars.
+ *
+ * @author Yuriy Govorushkin
+ */
+@Service
+public class CarService {
+
+    private final CarRepository carRepository;
+
+    public CarService(CarRepository carRepository) {
+        this.carRepository = carRepository;
+    }
+
+    public void addCar(Car car) throws DatabaseException {
+        if (findCarInDB(car)) {
+            throw new DatabaseException();
+        }
+        carRepository.save(car);
+    }
+
+    public boolean findCarInDB(Car car) {
+        return carRepository.findByModel(car.getModel()).isPresent();
+    }
+
+    public List<Car> findAllCar() {
+        return carRepository.findAll();
+    }
+
+    public Car findCar(Long id) {
+        return carRepository.findById(id).orElseThrow(IllegalArgumentException::new);
+    }
+}
