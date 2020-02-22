@@ -1,7 +1,6 @@
 package valatava.lab.warehouse.service;
 
 import java.util.List;
-import liquibase.exception.DatabaseException;
 import org.springframework.stereotype.Service;
 import valatava.lab.warehouse.model.Car;
 import valatava.lab.warehouse.repository.CarRepository;
@@ -20,7 +19,7 @@ public class CarService {
         this.carRepository = carRepository;
     }
 
-    public void addCar(Car car) throws DatabaseException {
+    public void addCar(Car car) {
         carRepository.save(car);
     }
 

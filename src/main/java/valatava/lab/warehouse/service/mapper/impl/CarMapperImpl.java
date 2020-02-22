@@ -14,6 +14,7 @@ import valatava.lab.warehouse.service.mapper.CarMapper;
  */
 @Service
 public class CarMapperImpl implements CarMapper {
+
     @Override
     public Car toEntity(CarDTO carDTO) {
         Car car = new Car();

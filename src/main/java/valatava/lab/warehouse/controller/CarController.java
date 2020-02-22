@@ -1,7 +1,6 @@
 package valatava.lab.warehouse.controller;
 
 import java.util.List;
-import liquibase.exception.DatabaseException;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -43,7 +42,7 @@ public class CarController {
     }
 
     @PostMapping
-    public void saveCar(@RequestBody CarDTO carDTO) throws CreatedEntityIdException, DatabaseException {
+    public void saveCar(@RequestBody CarDTO carDTO) throws CreatedEntityIdException {
         if (carDTO.getId() != null) {
             throw new CreatedEntityIdException();
         }
@@ -51,7 +50,7 @@ public class CarController {
     }
 
     @PutMapping
-    public void updateCar(@RequestBody CarDTO carDTO) throws UpdatedEntityIdException, DatabaseException {
+    public void updateCar(@RequestBody CarDTO carDTO) throws UpdatedEntityIdException {
         if (carDTO.getId() == null) {
             throw new UpdatedEntityIdException();
         }
