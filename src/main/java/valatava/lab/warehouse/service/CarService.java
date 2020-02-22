@@ -21,14 +21,7 @@ public class CarService {
     }
 
     public void addCar(Car car) throws DatabaseException {
-        if (findCarInDB(car)) {
-            throw new DatabaseException();
-        }
         carRepository.save(car);
-    }
-
-    public boolean findCarInDB(Car car) {
-        return carRepository.findByModel(car.getModel()).isPresent();
     }
 
     public List<Car> findAllCar() {
