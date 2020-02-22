@@ -30,5 +30,4 @@ public class CarService {
     public Car findCar(Long id) {
         return carRepository.findById(id).orElseThrow(IllegalArgumentException::new);
     }
-
 }
