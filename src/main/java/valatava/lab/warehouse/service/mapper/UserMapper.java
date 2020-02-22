@@ -2,7 +2,7 @@ package valatava.lab.warehouse.service.mapper;
 
 import java.util.List;
 import valatava.lab.warehouse.model.User;
-import valatava.lab.warehouse.model.dto.UserDTO;
+import valatava.lab.warehouse.service.dto.UserDTO;
 
 /**
  * @author Yuriy Govorushkin
