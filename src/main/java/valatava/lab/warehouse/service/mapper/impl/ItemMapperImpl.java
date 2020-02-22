@@ -14,6 +14,7 @@ import valatava.lab.warehouse.service.mapper.ItemMapper;
  */
 @Service
 public class ItemMapperImpl implements ItemMapper {
+
     @Override
     public Item toEntity(ItemDTO itemDTO) {
         Item item = new Item();
