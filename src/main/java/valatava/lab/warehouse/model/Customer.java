@@ -22,7 +22,7 @@ public class Customer {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String nameCastomer;
+    private String description;
 
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "customer")
     private List<Store> stores;

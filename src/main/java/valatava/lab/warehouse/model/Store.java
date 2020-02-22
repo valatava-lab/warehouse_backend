@@ -1,6 +1,5 @@
 package valatava.lab.warehouse.model;
 
-import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
@@ -8,6 +7,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.validation.constraints.Size;
 import lombok.Data;
 
 /**
@@ -35,10 +35,14 @@ public class Store {
     @JoinColumn(name = "car_id")
     private Car car;
 
+    @Size(max = 4, min = 4)
+    private Long yearFrom;
+
+    @Size(max = 4, min = 4)
+    private Long yearTo;
+
     private String code;
     private String description;
-    private Long yearFrom;
-    private Long yearTo;
     private boolean bridge;
     private Long amount;
     private Long price;
