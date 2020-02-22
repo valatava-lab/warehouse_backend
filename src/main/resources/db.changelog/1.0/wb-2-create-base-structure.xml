@@ -18,7 +18,7 @@
             <column name="id" type="bigint" autoIncrement="true">
                 <constraints primaryKey="true" primaryKeyName="pkey_customer"/>
             </column>
-            <column name="name_castomer" type="varchar(150)"/>
+            <column name="description" type="varchar(150)"/>
         </createTable>
 
         <createTable tableName="item">
