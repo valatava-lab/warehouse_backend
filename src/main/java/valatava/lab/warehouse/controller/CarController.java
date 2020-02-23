@@ -20,7 +20,7 @@ import valatava.lab.warehouse.service.mapper.CarMapper;
  * @author Yuriy Govorushkin
  */
 @RestController
-@RequestMapping("/model/car")
+@RequestMapping("/api/car")
 public class CarController {
 
     private final CarService carService;
