@@ -1,6 +1,5 @@
 package valatava.lab.warehouse.service.dto;
 
-import javax.validation.constraints.Size;
 import lombok.Data;
 
 /**
@@ -15,13 +14,8 @@ public class StoreDTO {
     private ItemDTO item;
     private CustomerDTO customer;
     private CarDTO car;
-
-    @Size(max = 4, min = 4)
     private Long yearFrom;
-
-    @Size(max = 4, min = 4)
     private Long yearTo;
-
     private String code;
     private String description;
     private boolean bridge;
