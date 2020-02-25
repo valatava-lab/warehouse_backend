@@ -11,21 +11,27 @@
             <column name="id" type="bigint" autoIncrement="true">
                 <constraints primaryKey="true" primaryKeyName="pkey_car"/>
             </column>
-            <column name="model" type="varchar(256)"/>
+            <column name="model" type="varchar(256)">
+                <constraints unique="true"/>
+            </column>
         </createTable>
 
         <createTable tableName="customer">
             <column name="id" type="bigint" autoIncrement="true">
                 <constraints primaryKey="true" primaryKeyName="pkey_customer"/>
             </column>
-            <column name="description" type="varchar(150)"/>
+            <column name="description" type="varchar(256)">
+                <constraints unique="true"/>
+            </column>
         </createTable>
 
         <createTable tableName="item">
             <column name="id" type="bigint" autoIncrement="true">
                 <constraints primaryKey="true" primaryKeyName="pkey_item"/>
             </column>
-            <column name="name_item" type="varchar(256)"/>
+            <column name="description" type="varchar(256)">
+                <constraints unique="true"/>
+            </column>
         </createTable>
 
         <createTable tableName="store">
