@@ -15,7 +15,7 @@ import valatava.lab.warehouse.service.dto.CarDTO;
 import valatava.lab.warehouse.service.mapper.CarMapper;
 
 /**
- * REST controller for managing the car.
+ * REST controller for managing the cars.
  *
  * @author Yuriy Govorushkin
  */
