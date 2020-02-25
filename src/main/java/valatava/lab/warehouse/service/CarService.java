@@ -21,15 +21,15 @@ public class CarService {
         this.carRepository = carRepository;
     }
 
-    public List<Car> findAllCars() {
+    public List<Car> findAll() {
         return carRepository.findAll();
     }
 
-    public Car findCarById(Long id) {
+    public Car findCar(Long id) {
         return carRepository.findById(id).orElseThrow(IllegalArgumentException::new);
     }
 
-    public void saveNewCar(Car car) {
+    public void save(Car car) {
         carRepository.save(car);
     }
 }

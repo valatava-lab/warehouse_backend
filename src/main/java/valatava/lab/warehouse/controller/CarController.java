@@ -33,12 +33,12 @@ public class CarController {
 
     @GetMapping
     public List<CarDTO> getAllCar() {
-        return carMapper.toDTOs(carService.findAllCars());
+        return carMapper.toDTOs(carService.findAll());
     }
 
     @GetMapping("{id}")
-    public CarDTO getCarById(@PathVariable Long id) {
-        return carMapper.toDTO(carService.findCarById(id));
+    public CarDTO getCar(@PathVariable Long id) {
+        return carMapper.toDTO(carService.findCar(id));
     }
 
     @PostMapping
@@ -46,7 +46,7 @@ public class CarController {
         if (carDTO.getId() != null) {
             throw new CreatedEntityIdException();
         }
-        carService.saveNewCar(carMapper.toEntity(carDTO));
+        carService.save(carMapper.toEntity(carDTO));
     }
 
     @PutMapping
@@ -54,6 +54,6 @@ public class CarController {
         if (carDTO.getId() == null) {
             throw new UpdatedEntityIdException();
         }
-        carService.saveNewCar(carMapper.toEntity(carDTO));
+        carService.save(carMapper.toEntity(carDTO));
     }
 }
