@@ -4,5 +4,6 @@
 
     <include file="1.0/wb-1-create-auth-structure.xml" relativeToChangelogFile="true"/>
     <include file="1.0/wb-2-create-base-structure.xml" relativeToChangelogFile="true"/>
+    <include file="1.0/wb-7-load-initial-data.xml" relativeToChangelogFile="true"/>
 
 </databaseChangeLog>

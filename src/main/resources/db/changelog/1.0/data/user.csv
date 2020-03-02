@@ -1,0 +1,2 @@
+login;password;first_name;last_name;email;activated
+admin;$2a$10$3vnKRUuU0g2pREwaDhH.jerKeOrjmfDr/nTnG1MnqNtNgMXqTlKEK;Administrator;Administrator;admin@localhost;true
